@@ -11,7 +11,7 @@ export default function Home() {
   const [htValue, setHtValue] = useState<string>('')
   const [ttcValue, setTtcValue] = useState<string>('')
   //eta pour la tva selectionee
-  const [selectedTvaRate, setSelectedTvaRate] = useState<number | null>(null)
+  const [selectedTvaRate, setSelectedTvaRate] = useState<number | null>(20)
 
   //eta pour la cantite de TVA
   const [tvaAmount, setTvaAmount] = useState<number | null>(null)
@@ -150,6 +150,7 @@ export default function Home() {
                     name="taux-tva"
                     value="20"
                     onChange={handleTvaChange}
+                    defaultChecked
                   />
                   <label htmlFor="tva-20" className={cn(style.radio, 'ml-2')}>
                     20%
