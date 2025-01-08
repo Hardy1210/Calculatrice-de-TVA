@@ -1,0 +1,26 @@
+.main {
+  .section {
+    form {
+      .montant {
+        input {
+          padding: 0 36px 0 7px;
+          font-size: 1.5em;
+        }
+        input::placeholder {
+          color: hsl(var(--input));
+        }
+      }
+      .metropole {
+        flex-wrap: wrap;
+        input[type='radio']:checked + label {
+          font-weight: bold;
+          //color: #af3ecc;
+          color: hsl(var(--primary));
+        }
+        input[type='radio'] {
+          accent-color: #af3ecc;
+        }
+      }
+    }
+  }
+}
